@@ -1,0 +1,54 @@
+{
+  "name": "PostgreSQL",
+  "available": true,
+  "port": 5432,
+  "exposable": false,
+  "id": "postgres",
+  "description": "The PostgreSQL object-relational database system provides reliability and data integrity.",
+  "tipi_version": 1,
+  "version": "16-alpine3.18",
+  "categories": ["development"],
+  "short_desc": "PostgreSQL, often simply \"Postgres\", is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards-compliance. As a database server, its primary function is to store data, securely and supporting best practices, and retrieve it later, as requested by other software applications, be it those on the same computer or those running on another computer across a network (including the Internet). It can handle workloads ranging from small single-machine applications to large Internet-facing applications with many concurrent users. Recent versions also provide replication of the database itself for security and scalability.",
+  "author": "https://www.postgresql.org/",
+  "source": "https://github.com/docker-library/postgres",
+  "website": "https://www.postgresql.org/",
+  "uid": "9000",
+  "gid": "9000",
+  "form_fields": [
+    {
+      "type": "password",
+      "label": "Password",
+      "hint": "This environment variable is required for you to use the PostgreSQL image. It must not be empty or undefined. This environment variable sets the superuser password for PostgreSQL. The default superuser is defined by the POSTGRES_USER environment variable.",
+      "placeholder": "",
+      "max": 63,
+      "min": 1,
+      "required": true,
+      "env_variable": "POSTGRES_PASSWORD"
+    },
+    {
+      "type": "text",
+      "label": "User",
+      "hint": "This optional environment variable is used in conjunction with POSTGRES_PASSWORD to set a user and its password. This variable will create the specified user with superuser power and a database with the same name. If it is not specified, then the default user of postgres will be used.",
+      "placeholder": "postgres",
+      "max": 63,
+      "min": 1,
+      "required": false,
+      "env_variable": "POSTGRES_USER"
+    },
+    {
+      "type": "text",
+      "label": "Database",
+      "max": 63,
+      "min": 1,
+      "required": false,
+      "env_variable": "POSTGRES_DB"
+    },
+    {
+      "type": "port",
+      "label": "Database",
+      "required": false,
+      "env_variable": "APP_PORT"
+    }
+
+  ]
+}
