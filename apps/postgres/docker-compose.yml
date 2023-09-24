@@ -20,11 +20,4 @@ services:
     networks:
       - tipi_main_network
     labels:
-      # Main
       traefik.enable: false
-
-#  adminer:
-#    image: adminer
-#    restart: always
-#    ports:
-#      - 8080:8080
