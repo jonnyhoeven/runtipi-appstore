@@ -9,7 +9,7 @@
   "tipi_version": 1,
   "version": "16-alpine3.18",
   "categories": ["development"],
-  "short_desc": "The PostgreSQL object-relational database system provides reliability and data integrity.",
+  "short_desc": "The PostgreSQL object-relational database",
   "author": "https://www.postgresql.org/",
   "source": "https://github.com/docker-library/postgres",
   "website": "https://www.postgresql.org/",
