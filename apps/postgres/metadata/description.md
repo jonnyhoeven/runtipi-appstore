@@ -14,6 +14,8 @@ career opportunities. Learn more on how to engage with the community.
 [Docker Hub](https://hub.docker.com/_/postgres)
 [Container env](https://github.com/docker-library/docs/blob/master/postgres/README.md)
 
+Database mount: ```/runtipi/app-data/postgres/data```
+
 ## Environment variables
 
 | ENV. Variable            | Description |
