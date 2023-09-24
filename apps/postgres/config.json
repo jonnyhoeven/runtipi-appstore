@@ -25,16 +25,6 @@
       "min": 1,
       "required": true,
       "env_variable": "POSTGRES_PASSWORD"
-    },
-    {
-      "type": "text",
-      "label": "Super Username",
-      "hint": "Optional, set the super username, defaults to postgres",
-      "placeholder": "postgres",
-      "max": 63,
-      "min": 1,
-      "required": false,
-      "env_variable": "POSTGRES_USER"
     }
   ]
 }
