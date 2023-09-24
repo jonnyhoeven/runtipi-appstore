@@ -18,8 +18,8 @@
   "form_fields": [
     {
       "type": "password",
-      "label": "Password",
-      "hint": "This environment variable is required for you to use the PostgreSQL image. It must not be empty or undefined. This environment variable sets the superuser password for PostgreSQL. The default superuser is defined by the POSTGRES_USER environment variable.",
+      "label": "Super User Password",
+      "hint": "Required for you to use the PostgreSQL image",
       "placeholder": "",
       "max": 63,
       "min": 1,
