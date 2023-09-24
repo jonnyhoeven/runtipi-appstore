@@ -4,7 +4,7 @@
   "exposable": true,
   "tipi_version": 1,
   "version": "4.8.1",
-  "port": 8105,
+  "port": 8004,
   "id": "adminer",
   "categories": [
     "development"

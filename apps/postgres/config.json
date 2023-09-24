@@ -1,7 +1,7 @@
 {
   "name": "PostgreSQL",
   "available": true,
-  "port": 5500,
+  "port": 8003,
   "exposable": false,
   "no_gui": true,
   "id": "postgres",
