@@ -29,7 +29,7 @@
     {
       "type": "text",
       "label": "User",
-      "hint": "This optional environment variable is used in conjunction with POSTGRES_PASSWORD to set a user and its password. This variable will create the specified user with superuser power and a database with the same name. If it is not specified, then the default user of postgres will be used.",
+      "hint": "This optional to set a user and its password. This variable will create the specified user with superuser power and a database with the same name.",
       "placeholder": "postgres",
       "max": 63,
       "min": 1,
