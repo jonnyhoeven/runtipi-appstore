@@ -14,7 +14,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data:/var/lib/postgresql/data:rw
     environment:
-      - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     healthcheck:
       test: netstat -an | grep 5432 > /dev/null; if [ 0 != $? ]; then exit 1; fi;
