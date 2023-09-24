@@ -12,5 +12,23 @@
   "description": "pgAdmin is the most popular and feature rich Open Source administration and development platform for PostgreSQL, the most advanced Open Source database in the world.",
   "short_desc": "PostgreSQL Tools",
   "author": "pgAdmin Project",
-  "source": "https://github.com/pgadmin-org/pgadmin4"
+  "source": "https://github.com/pgadmin-org/pgadmin4",
+  "form_fields": [
+    {
+      "type": "email",
+      "label": "Default Email",
+      "hint": "This is the email address used when setting up the initial administrator account to login to pgAdmin. This variable is required and must be set at launch time.",
+      "placeholder": "",
+      "required": true,
+      "env_variable": "PGADMIN_DEFAULT_EMAIL"
+    },
+    {
+      "type": "password",
+      "label": "Default Password",
+      "hint": "This is the password used when setting up the initial administrator account to login to pgAdmin. This variable is required and must be set at launch time.",
+      "placeholder": "",
+      "required": true,
+      "env_variable": "PGADMIN_DEFAULT_PASSWORD"
+    }
+  ]
 }
