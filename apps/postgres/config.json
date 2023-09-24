@@ -35,14 +35,6 @@
       "min": 1,
       "required": false,
       "env_variable": "POSTGRES_USER"
-    },
-    {
-      "type": "text",
-      "label": "Database",
-      "max": 63,
-      "min": 1,
-      "required": false,
-      "env_variable": "POSTGRES_DB"
     }
   ]
 }
