@@ -11,7 +11,9 @@ career opportunities. Learn more on how to engage with the community.
 [Container env](https://github.com/docker-library/docs/blob/master/postgres/README.md)
 
 Because RunTipi already includes ```postgres:14``` on port ```5432```
-this container will use port ```5500```.
+this app will use port ```8003```.
+
+To manage postgres you can use [adminer](/app-store/adminer)
 
 ## Folder Info
 | ROOT FOLDER                      | CONTAINER FOLDER         |
