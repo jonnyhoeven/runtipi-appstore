@@ -1,17 +1,8 @@
-## Adminer
+## pgAdmin
+pgAdmin is the most popular and feature rich Open Source administration and development platform for PostgreSQL, the most advanced Open Source database in the world.
 
-![Logo](https://raw.githubusercontent.com/docker-library/docs/95569c9119afe7b11a233105d398f99d93d2fcce/adminer/logo.png)
+pgAdmin is a management tool for PostgreSQL and derivative relational databases such as EnterpriseDB's EDB Advanced Server. It may be run either as a web or desktop application. For more information on the features offered, please see the Features and Screenshots pages.
 
-Adminer (formerly phpMinAdmin) is a full-featured database management tool written in PHP. 
-Conversely, to phpMyAdmin, it consists of a single file ready to deploy to the target server.
+When deploying pgAdmin on a web server for multiple users, it is run in server mode (SERVER_MODE = True). This mode requires each user to have an account in pgAdmin, with their own password. Users are required to login to pgAdmin in order to use it. One or more users may be configured as an administrator and will be able to add or remove other users. For more information, please see the Server Deployment and User Management documentation.
 
-### Adminer is available for:
-- MySQL
-- PostgreSQL
-- SQLite
-- MS SQL
-- Oracle
-- Firebird
-- SimpleDB
-- Elasticsearch 
-- and MongoDB
+[Website](https://www.pgadmin.org/)
