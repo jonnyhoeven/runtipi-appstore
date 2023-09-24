@@ -1,8 +1,4 @@
-# PostgreSQL
-
-The World's Most Advanced Open Source Relational Database
-
-## Description
+## The World's Most Advanced Open Source Relational Database
 
 PostgreSQL is a powerful, open source object-relational database system with over 35 years of active development that
 has earned it a strong reputation for reliability, feature robustness, and performance.
@@ -14,10 +10,10 @@ career opportunities. Learn more on how to engage with the community.
 [Docker Hub](https://hub.docker.com/_/postgres)
 [Container env](https://github.com/docker-library/docs/blob/master/postgres/README.md)
 
-Database mount: ```/runtipi/app-data/postgres/data```
+Because RunTipi already includes ```postgres:14``` on port ```5432```
+this container will use port ```5500```.
 
-## Environment variables
-
-| ENV. Variable            | Description |
-| ------------------------ |-------------|
-| `POSTGRES_PASSWORD`      | Required    |
+## Folder Info
+| ROOT FOLDER                      | CONTAINER FOLDER         |
+|----------------------------------|--------------------------|
+| /runtipi/app-data/postgres/data  | /var/lib/postgresql/data |
