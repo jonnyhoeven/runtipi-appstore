@@ -24,7 +24,7 @@
       "max": 63,
       "min": 1,
       "required": true,
-      "env_variable": "POSTGRES_PASSWORD"
+      "env_variable": "APP_POSTGRES_PASSWORD"
     }
   ]
 }
