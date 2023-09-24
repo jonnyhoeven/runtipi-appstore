@@ -12,8 +12,8 @@
   "author": "https://www.postgresql.org/",
   "source": "https://github.com/docker-library/postgres",
   "website": "https://www.postgresql.org/",
-  "uid": "9000",
-  "gid": "9000",
+  "uid": 9000,
+  "gid": 9000,
   "form_fields": [
     {
       "type": "password",
