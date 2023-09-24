@@ -2,26 +2,29 @@ version: "3.8"
 
 services:
   postgres:
+    build:
+      context: .
+      shm_size: '64'
     container_name: postgres
     # user: root
     image: postgres:16-alpine3.18
     restart: unless-stopped
     ports:
-      - ${APP_PORT}:5432
+      - ${APP_PORT}:${APP_PORT}
     volumes:
       - ${APP_DATA_DIR}/data:/var/lib/postgresql/data:rw
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-      - POSTGRES_DB=${POSTGRES_DB}
-    #healthcheck:
-      #test: netstat -an | grep 25 > /dev/null; if [ 0 != $? ]; then exit 1; fi;
-      #interval: 10s
-      #timeout: 5s
-      #retries: 5
-      #start_period: 30s
-    #networks:
-    #  - tipi_main_network
+      - PGPORT=${APP_PORT}
+    healthcheck:
+      test: netstat -an | grep 5432 > /dev/null; if [ 0 != $? ]; then exit 1; fi;
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    networks:
+      - tipi_main_network
     labels:
       # Main
       traefik.enable: false
