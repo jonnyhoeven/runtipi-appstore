@@ -28,8 +28,8 @@
     },
     {
       "type": "text",
-      "label": "User",
-      "hint": "This optional to set a user and its password. This variable will create the specified user with superuser power and a database with the same name.",
+      "label": "Super Username",
+      "hint": "Optional, set the super username, defaults to postgres",
       "placeholder": "postgres",
       "max": 63,
       "min": 1,
