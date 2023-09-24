@@ -1,0 +1,16 @@
+{
+  "name": "Adminer",
+  "available": true,
+  "exposable": true,
+  "tipi_version": 17,
+  "version": "0.107.38",
+  "port": 8105,
+  "id": "adguard",
+  "categories": [
+    "development"
+  ],
+  "description": "Adminer (formerly phpMinAdmin) is a full-featured database management tool written in PHP. Conversely to phpMyAdmin, it consist of a single file ready to deploy to the target server. Adminer is available for MySQL, PostgreSQL, SQLite, MS SQL, Oracle, Firebird, SimpleDB, Elasticsearch and MongoDB.",
+  "short_desc": "A full-featured database management tool",
+  "author": "vrana",
+  "source": "https://github.com/vrana/adminer"
+}

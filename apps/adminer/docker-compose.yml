@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - ${APP_PORT}:8080
